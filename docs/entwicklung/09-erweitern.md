@@ -193,6 +193,7 @@ welche Datei bei welcher Änderung betroffen ist:
 | Neues oder geändertes Skript in `tools/` | [Schritt 8](08-tests-und-werkzeuge.md) |
 | Neue Erweiterungsmöglichkeit, neue Stolperfalle, neue Schlüssel für `mods`, `adds`, `flags` | dieser Schritt |
 | Bedienung, Startoptionen, Funktionsumfang aus Spielersicht | [Projekt-README](../../README.md) |
+| Testbefehle, Architekturregeln, Zielgruppe oder Schreibregeln der Doku | [CLAUDE.md](../../CLAUDE.md) |
 
 Regeln für die Pflege:
 

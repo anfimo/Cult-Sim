@@ -68,7 +68,9 @@ nach Gründlichkeit einen halben bis ganzen Tag.
 
 Die Dokumentation wird zusammen mit dem Code gepflegt: Wer eine Erweiterung einbaut, passt im selben
 Arbeitsgang die betroffenen Schritte an. Welche Änderung welche Datei betrifft, steht in der Tabelle
-am Ende von [Schritt 9](09-erweitern.md#doku-aktuell-halten).
+am Ende von [Schritt 9](09-erweitern.md#doku-aktuell-halten). Zielgruppe und Schreibregeln sind in
+der [CLAUDE.md](../../CLAUDE.md) im Projektverzeichnis festgelegt, die Claude Code in jeder Sitzung
+automatisch liest.
 
 Die Dokumentation verweist auf Funktionsnamen und nicht auf Zeilennummern, damit sie beim Bearbeiten
 des Codes nicht sofort veraltet. Ein Funktionsname lässt sich im Editor über die Symbolsuche finden.

@@ -38,6 +38,7 @@ assets/                 Grafik, Ton, manifest.json
 tools/                  Tests und Generatoren (siehe Schritt 8)
 saves/                  Spielstände (wird beim ersten Speichern angelegt)
 docs/                   Screenshots und diese Dokumentation
+CLAUDE.md               Arbeitsregeln für Claude Code, darunter die Pflege dieser Dokumentation
 ```
 
 ## Die drei Schichten
