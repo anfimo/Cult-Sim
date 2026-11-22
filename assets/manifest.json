@@ -1,0 +1,712 @@
+{
+  "tile": [
+    32,
+    16
+  ],
+  "sprites": {
+    "terrain_grass": {
+      "file": "sprites/terrain_grass.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 4
+    },
+    "terrain_dirt": {
+      "file": "sprites/terrain_dirt.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 2
+    },
+    "terrain_sand": {
+      "file": "sprites/terrain_sand.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 2
+    },
+    "terrain_rock": {
+      "file": "sprites/terrain_rock.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 2
+    },
+    "terrain_road": {
+      "file": "sprites/terrain_road.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 2
+    },
+    "terrain_water": {
+      "file": "sprites/terrain_water.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 2
+    },
+    "floor_wood": {
+      "file": "sprites/floor_wood.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 1
+    },
+    "floor_stone": {
+      "file": "sprites/floor_stone.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 1
+    },
+    "floor_carpet": {
+      "file": "sprites/floor_carpet.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 1
+    },
+    "floor_tile": {
+      "file": "sprites/floor_tile.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 1
+    },
+    "floor_soil": {
+      "file": "sprites/floor_soil.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 1
+    },
+    "tile_mask": {
+      "file": "sprites/tile_mask.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 1
+    },
+    "cursor": {
+      "file": "sprites/cursor.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 1
+    },
+    "crop": {
+      "file": "sprites/crop.png",
+      "anchor": [
+        16,
+        16
+      ],
+      "frames": 4
+    },
+    "tree": {
+      "file": "sprites/tree.png",
+      "anchor": [
+        16,
+        44
+      ],
+      "frames": 2
+    },
+    "bush": {
+      "file": "sprites/bush.png",
+      "anchor": [
+        16,
+        12
+      ],
+      "frames": 1
+    },
+    "boulder": {
+      "file": "sprites/boulder.png",
+      "anchor": [
+        16,
+        14
+      ],
+      "frames": 1
+    },
+    "wall_wood": {
+      "file": "sprites/wall_wood.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "wall_stone": {
+      "file": "sprites/wall_stone.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "door_wood": {
+      "file": "sprites/door_wood.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "wall_wood_low": {
+      "file": "sprites/wall_wood_low.png",
+      "anchor": [
+        16,
+        13
+      ],
+      "frames": 1
+    },
+    "wall_stone_low": {
+      "file": "sprites/wall_stone_low.png",
+      "anchor": [
+        16,
+        13
+      ],
+      "frames": 1
+    },
+    "door_wood_low": {
+      "file": "sprites/door_wood_low.png",
+      "anchor": [
+        16,
+        13
+      ],
+      "frames": 1
+    },
+    "fence_post": {
+      "file": "sprites/fence_post.png",
+      "anchor": [
+        16,
+        20
+      ],
+      "frames": 1
+    },
+    "fence_rail_ne": {
+      "file": "sprites/fence_rail_ne.png",
+      "anchor": [
+        16,
+        20
+      ],
+      "frames": 1
+    },
+    "fence_rail_nw": {
+      "file": "sprites/fence_rail_nw.png",
+      "anchor": [
+        16,
+        20
+      ],
+      "frames": 1
+    },
+    "fence_rail_se": {
+      "file": "sprites/fence_rail_se.png",
+      "anchor": [
+        16,
+        20
+      ],
+      "frames": 1
+    },
+    "fence_rail_sw": {
+      "file": "sprites/fence_rail_sw.png",
+      "anchor": [
+        16,
+        20
+      ],
+      "frames": 1
+    },
+    "gate_post": {
+      "file": "sprites/gate_post.png",
+      "anchor": [
+        16,
+        20
+      ],
+      "frames": 1
+    },
+    "bed": {
+      "file": "sprites/bed.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "bed_guru": {
+      "file": "sprites/bed_guru.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "table": {
+      "file": "sprites/table.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "stove": {
+      "file": "sprites/stove.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "altar": {
+      "file": "sprites/altar.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "desk": {
+      "file": "sprites/desk.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "printer": {
+      "file": "sprites/printer.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "crate": {
+      "file": "sprites/crate.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "donation_box": {
+      "file": "sprites/donation_box.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "merch": {
+      "file": "sprites/merch.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 1
+    },
+    "lamp": {
+      "file": "sprites/lamp.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 2
+    },
+    "campfire": {
+      "file": "sprites/campfire.png",
+      "anchor": [
+        16,
+        24
+      ],
+      "frames": 2
+    },
+    "mat": {
+      "file": "sprites/mat.png",
+      "anchor": [
+        16,
+        8
+      ],
+      "frames": 1
+    },
+    "statue": {
+      "file": "sprites/statue.png",
+      "anchor": [
+        16,
+        40
+      ],
+      "frames": 1
+    },
+    "loudspeaker": {
+      "file": "sprites/loudspeaker.png",
+      "anchor": [
+        16,
+        40
+      ],
+      "frames": 1
+    },
+    "confession": {
+      "file": "sprites/confession.png",
+      "anchor": [
+        16,
+        36
+      ],
+      "frames": 1
+    },
+    "watchtower": {
+      "file": "sprites/watchtower.png",
+      "anchor": [
+        16,
+        52
+      ],
+      "frames": 1
+    },
+    "banner": {
+      "file": "sprites/banner.png",
+      "anchor": [
+        16,
+        40
+      ],
+      "frames": 1
+    },
+    "goat": {
+      "file": "sprites/goat.png",
+      "anchor": [
+        8,
+        12
+      ],
+      "frames": 2
+    },
+    "pawn_skin_front": {
+      "file": "sprites/pawn_skin_front.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 3
+    },
+    "pawn_skin_back": {
+      "file": "sprites/pawn_skin_back.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 3
+    },
+    "pawn_robe_front": {
+      "file": "sprites/pawn_robe_front.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 3
+    },
+    "pawn_robe_back": {
+      "file": "sprites/pawn_robe_back.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 3
+    },
+    "pawn_civ_front": {
+      "file": "sprites/pawn_civ_front.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 3
+    },
+    "pawn_civ_back": {
+      "file": "sprites/pawn_civ_back.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 3
+    },
+    "pawn_hair_front": {
+      "file": "sprites/pawn_hair_front.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 3
+    },
+    "pawn_hair_back": {
+      "file": "sprites/pawn_hair_back.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 3
+    },
+    "acc_guru": {
+      "file": "sprites/acc_guru.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 1
+    },
+    "acc_hood": {
+      "file": "sprites/acc_hood.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 1
+    },
+    "acc_guard": {
+      "file": "sprites/acc_guard.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 1
+    },
+    "acc_police": {
+      "file": "sprites/acc_police.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 1
+    },
+    "acc_soldier": {
+      "file": "sprites/acc_soldier.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 1
+    },
+    "acc_press": {
+      "file": "sprites/acc_press.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 1
+    },
+    "acc_inspector": {
+      "file": "sprites/acc_inspector.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 1
+    },
+    "acc_sign": {
+      "file": "sprites/acc_sign.png",
+      "anchor": [
+        6,
+        16
+      ],
+      "frames": 1
+    },
+    "fx_zzz": {
+      "file": "sprites/fx_zzz.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "fx_heart": {
+      "file": "sprites/fx_heart.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "fx_exclaim": {
+      "file": "sprites/fx_exclaim.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "fx_question": {
+      "file": "sprites/fx_question.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "fx_speech": {
+      "file": "sprites/fx_speech.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "fx_halo": {
+      "file": "sprites/fx_halo.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "fx_note": {
+      "file": "sprites/fx_note.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "fx_money": {
+      "file": "sprites/fx_money.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "fx_angry": {
+      "file": "sprites/fx_angry.png",
+      "anchor": [
+        4,
+        8
+      ],
+      "frames": 1
+    },
+    "icon_money": {
+      "file": "sprites/icon_money.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_food": {
+      "file": "sprites/icon_food.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_meal": {
+      "file": "sprites/icon_meal.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_ep": {
+      "file": "sprites/icon_ep.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_heat": {
+      "file": "sprites/icon_heat.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_members": {
+      "file": "sprites/icon_members.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_tracts": {
+      "file": "sprites/icon_tracts.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_faith": {
+      "file": "sprites/icon_faith.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_mood": {
+      "file": "sprites/icon_mood.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    },
+    "icon_bond": {
+      "file": "sprites/icon_bond.png",
+      "anchor": [
+        0,
+        0
+      ],
+      "frames": 1
+    }
+  },
+  "sounds": {
+    "click": {
+      "file": "sfx/click.wav",
+      "volume": 0.5
+    },
+    "place": {
+      "file": "sfx/place.wav",
+      "volume": 0.6
+    },
+    "build_done": {
+      "file": "sfx/build_done.wav",
+      "volume": 0.6
+    },
+    "convert": {
+      "file": "sfx/convert.wav",
+      "volume": 0.7
+    },
+    "alert": {
+      "file": "sfx/alert.wav",
+      "volume": 0.7
+    },
+    "event": {
+      "file": "sfx/event.wav",
+      "volume": 0.8
+    },
+    "coin": {
+      "file": "sfx/coin.wav",
+      "volume": 0.6
+    },
+    "error": {
+      "file": "sfx/error.wav",
+      "volume": 0.6
+    }
+  },
+  "music": [
+    {
+      "file": "music/drone_organ.wav",
+      "title": "Orgel der Erleuchtung"
+    }
+  ]
+}

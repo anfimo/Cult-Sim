@@ -1,0 +1,31 @@
+{
+  "campaigns": {
+    "flyer": {"name": "Flyer verteilen", "text": "'Sind Sie glücklich? Sicher?' – in jedem Briefkasten.", "cost": 40, "days": 5, "power": 1.0, "heat": 2, "tracts": 2, "aware": 2, "phase": 1},
+    "infostand": {"name": "Infostand mit Gratis-Tee", "text": "Freundliche Menschen in Roben, die 'nur mal reden' wollen.", "cost": 90, "days": 5, "power": 1.8, "heat": 3, "tracts": 3, "aware": 3, "phase": 1},
+    "test": {"name": "Kostenloser Persönlichkeitstest", "text": "200 Fragen, ein Ergebnis: Sie brauchen uns dringend.", "cost": 150, "days": 7, "power": 2.6, "heat": 6, "tracts": 4, "aware": 3, "phase": 1},
+    "hausbesuch": {"name": "Hausbesuche im Morgengrauen", "text": "Immer zu zweit, immer lächelnd, immer sonntags um 7.", "cost": 60, "days": 4, "power": 2.2, "heat": 10, "tracts": 3, "aware": 4, "phase": 1},
+    "social": {"name": "Erleuchtungs-Influencer", "text": "#blessed #gurugang #linksinbio", "cost": 250, "days": 7, "power": 3.2, "heat": 4, "tracts": 0, "aware": 6, "phase": 1},
+    "tv": {"name": "Teleshopping-Predigt", "text": "Nur heute: Erlösung im Dreierpack, dazu ein Gemüsehobel gratis.", "cost": 500, "days": 10, "power": 6.0, "heat": 7, "tracts": 0, "aware": 10, "phase": 2},
+    "stadion": {"name": "Stadion-Erweckung", "text": "20.000 Menschen, eine Nebelmaschine und spontane Wunderheilungen (gecastet).", "cost": 1400, "days": 3, "power": 15.0, "heat": 14, "tracts": 0, "aware": 12, "phase": 2},
+    "promi": {"name": "Promi-Botschafter", "text": "Ein Hollywoodstar hüpft in einer Talkshow auf dem Sofa und schwärmt vom Guru.", "cost": 2500, "days": 14, "power": 10.0, "heat": 3, "tracts": 0, "aware": 16, "phase": 3}
+  },
+  "chapters": [
+    {"name": "–", "cost": 0, "upkeep": 0},
+    {"name": "Lesekreis", "cost": 200, "upkeep": 4, "text": "Trifft sich dienstags im Hinterzimmer eines Reformhauses."},
+    {"name": "Erleuchtungszentrum", "cost": 900, "upkeep": 18, "text": "Seminarräume, Buchladen, auffällig viele Überwachungskameras."},
+    {"name": "Tempel", "cost": 3500, "upkeep": 60, "text": "Goldene Kuppel, Parkhaus, Geschenkeshop."}
+  ],
+  "actions": {
+    "pr": {"name": "PR-Offensive", "text": "Hochglanzbroschüre, Benefiz-Suppenküche, Fotos mit Kindern und Ziegen. Senkt den Verdacht deutlich.", "cost": 300, "phase": 1},
+    "lobby": {"name": "Lobbyarbeit & Parteispenden", "text": "Ein Abendessen hier, eine Spende da. Behörden schauen 30 Tage lang weniger genau hin.", "cost": 900, "phase": 2},
+    "hub": {"name": "Logistikzentrum", "text": "Lager für Traktate, Roben und Heilkristalle. Versorgt die Region und ihre Nachbarn.", "cost": 2000, "upkeep": 30, "phase": 2},
+    "translate": {"name": "Schriften übersetzen", "text": "Ohne Übersetzung versteht dort niemand die Heilsbotschaft (Wachstum stark gebremst).", "cost": 60000, "ep": 30, "days": 5, "phase": 3}
+  },
+  "lawyers": [
+    {"name": "Keine Anwälte", "cost": 0},
+    {"name": "Onkel Rolf (Mietrecht)", "cost": 40},
+    {"name": "Kanzlei Dr. Schlupf & Loch", "cost": 150},
+    {"name": "Internationale Großkanzlei", "cost": 450}
+  ],
+  "status": ["Unauffällig", "Presse berichtet", "Behördliche Auflagen", "Verbotsverfahren", "Verboten"]
+}

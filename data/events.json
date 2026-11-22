@@ -1,0 +1,236 @@
+{
+  "events": {
+    "reporter": {
+      "title": "Der Lokalreporter", "phase": [1, 3], "weight": 1.2, "cooldown": 12, "cond": {"day_min": 3},
+      "text": "Ein Herr vom 'Sülzheimer Boten' steht am Tor. Er habe 'nur ein paar Fragen' zu {cult}. Sein Notizblock ist verdächtig dick.",
+      "choices": [
+        {"label": "Hereinbitten und herumführen", "tip": "Ein Journalist betritt das Gelände. Was er sieht, schreibt er auf.", "effects": {"spawn": "journalist"}},
+        {"label": "Mit Tee, Keksen und Broschüre abwimmeln", "cost": {"money": 30}, "effects": {"random": [
+          {"p": 0.6, "text": "Er schreibt einen netten Dreizeiler unter 'Vereinsleben'.", "effects": {"awareness": 4}},
+          {"p": 0.4, "text": "'Sekte verweigert Auskunft' – nicht die Schlagzeile, die wir wollten.", "effects": {"heat": 6, "awareness": 6}}]}},
+        {"label": "Anzeigen im Wert von 200 € schalten", "cost": {"money": 200}, "tip": "Plötzlich ist die Berichterstattung sehr wohlwollend.", "effects": {"heat": -4, "awareness": 8, "doctrine": {"commerce": 4}}}
+      ]
+    },
+    "eltern": {
+      "title": "Besorgte Angehörige", "phase": [1, 3], "weight": 1.0, "cooldown": 10, "cond": {"members_min": 4},
+      "text": "Die Familie von {member} steht vor dem Gelände. Mit selbstgebackenem Kuchen und einem Transparent: 'KOMM NACH HAUSE'.",
+      "choices": [
+        {"label": "Ein Gespräch erlauben", "tip": "Angehörige kommen aufs Gelände und reden auf das Mitglied ein.", "effects": {"spawn": "relative", "heat": -2, "doctrine": {"isolation": -5}}},
+        {"label": "Abweisen: 'Er/Sie ist jetzt bei seiner wahren Familie'", "effects": {"heat": 5, "member": {"mood": -8}, "doctrine": {"isolation": 6}}},
+        {"label": "Den Kuchen annehmen, die Familie nicht", "effects": {"meals": 3, "heat": 3, "mood_all": 1}}
+      ]
+    },
+    "finanzamt": {
+      "title": "Post vom Finanzamt", "phase": [1, 3], "weight": 1.0, "cooldown": 20, "cond": {"day_min": 8},
+      "text": "Das Finanzamt bittet 'im Rahmen einer routinemäßigen Prüfung' um sämtliche Unterlagen der letzten Jahre. Unterlagen?",
+      "choices": [
+        {"label": "Brav nachzahlen", "cost": {"money": 250}, "effects": {"heat": -5}},
+        {"label": "Kreative Buchführung einreichen", "tip": "Riskant. Ein guter Schreiber hilft nicht – Glück schon.", "effects": {"random": [
+          {"p": 0.55, "text": "Die 'Aufwandsentschädigung für kosmische Beratung' wird anerkannt.", "effects": {"money": 150}},
+          {"p": 0.45, "text": "Der Prüfer hat gelacht. Dann nicht mehr.", "effects": {"money": -400, "heat": 10, "evidence": 6}}]}},
+        {"label": "'Wir sind eine Religionsgemeinschaft!'", "effects": {"heat": 4, "evidence": 2, "doctrine": {"isolation": 4}}}
+      ]
+    },
+    "vision": {
+      "title": "Eine Vision!", "phase": [1, 3], "weight": 1.0, "cooldown": 9, "cond": {"members_min": 3},
+      "text": "{member} hatte beim Zähneputzen eine Vision: Der Guru erschien als leuchtende Gestalt und sagte etwas über 'mehr Ballaststoffe'.",
+      "choices": [
+        {"label": "Als Wunder verkünden", "effects": {"faith_all": 5, "ep": 5, "member": {"faith": 15, "bond": 8}, "doctrine": {"apocalypse": 3}}},
+        {"label": "Visionen sind dem Guru vorbehalten!", "effects": {"member": {"faith": -10, "mood": -8, "bond": -5}, "ep": 3, "doctrine": {"isolation": 3}}},
+        {"label": "Die Vision als Hörbuch vermarkten", "effects": {"money": 180, "faith_all": -2, "doctrine": {"commerce": 8}}}
+      ]
+    },
+    "toast": {
+      "title": "Das Wunder von der Frühstückstheke", "phase": [1, 3], "weight": 0.8, "cooldown": 30,
+      "text": "Auf einer Scheibe Toast ist eindeutig das Antlitz des Gurus erschienen. Oder ein Kartoffelkäfer. Die Meinungen gehen auseinander.",
+      "choices": [
+        {"label": "In einem Schrein ausstellen", "effects": {"faith_all": 4, "awareness": 5, "ep": 4}},
+        {"label": "Im Internet versteigern", "effects": {"money": 320, "awareness": 3, "doctrine": {"commerce": 6}}},
+        {"label": "Aufessen. Brot ist Brot.", "effects": {"meals": 1, "faith_all": -1, "doctrine": {"commerce": -4, "apocalypse": -3}}}
+      ]
+    },
+    "promi": {
+      "title": "Prominenter Besuch", "phase": [1, 3], "weight": 0.6, "cooldown": 40, "cond": {"day_min": 10},
+      "text": "Ein abgehalfterter Schlagersänger ('Tränen auf Mallorca', 1994) interessiert sich für {cult}. Er sucht 'einen Neuanfang und eine Bühne'.",
+      "choices": [
+        {"label": "Zum Ehrenmitglied ernennen", "effects": {"awareness": 12, "heat": 4, "money": 300, "doctrine": {"commerce": 5, "isolation": -5}}},
+        {"label": "Normal aufnehmen wie jeden anderen", "effects": {"recruit": 1, "faith_all": 2}},
+        {"label": "Ablehnen – wir haben Standards", "effects": {"faith_all": 3, "doctrine": {"commerce": -5}}}
+      ]
+    },
+    "ernte": {
+      "title": "Rübenfäule", "phase": [1, 3], "weight": 0.7, "cooldown": 25, "cond": {"day_min": 6},
+      "text": "Ein Teil der Vorräte ist verdorben. {member} meint, das sei die Strafe für mangelnde Hingabe. {member} war fürs Lager zuständig.",
+      "choices": [
+        {"label": "Vorräte entsorgen", "effects": {"food_pct": -35}},
+        {"label": "'Fermentiert' nennen und servieren", "effects": {"food_pct": -10, "mood_all": -6, "doctrine": {"commerce": -3}}},
+        {"label": "Großeinkauf im Discounter", "cost": {"money": 120}, "effects": {"food_pct": -35, "food": 50}}
+      ]
+    },
+    "aussteiger_buch": {
+      "title": "Der Aussteiger packt aus", "phase": [1, 3], "weight": 1.0, "cooldown": 30, "cond": {"flag": "defector"},
+      "text": "Ein ehemaliges Mitglied schreibt ein Buch: 'Mein Jahr im Griff des Gurus'. Der Verlag plant eine Lesereise.",
+      "choices": [
+        {"label": "Einstweilige Verfügung beantragen", "cost": {"money": 400}, "effects": {"random": [
+          {"p": 0.5, "text": "Das Buch erscheint mit geschwärzten Passagen. Verkauft sich mäßig.", "effects": {"heat": 2}},
+          {"p": 0.5, "text": "Streisand-Effekt: Jetzt will es jeder lesen.", "effects": {"heat": 12, "evidence": 8, "awareness": 10}}]}},
+        {"label": "Gegenbuch veröffentlichen: 'Die Wahrheit über die Lügen'", "cost": {"ep": 8}, "effects": {"heat": 5, "faith_all": 4, "awareness": 6}},
+        {"label": "Ignorieren und weglächeln", "effects": {"heat": 8, "evidence": 5}}
+      ]
+    },
+    "nachbar": {
+      "title": "Nachbarschaftsstreit", "phase": [1, 2], "weight": 1.0, "cooldown": 14,
+      "text": "Bauer Hinrichsen von nebenan beschwert sich: Das nächtliche Singen mache seine Kühe 'spirituell unruhig'. Er droht mit dem Ordnungsamt.",
+      "choices": [
+        {"label": "Mit einem Präsentkorb besänftigen", "cost": {"money": 60}, "effects": {"heat": -3}},
+        {"label": "Lauter singen", "effects": {"heat": 6, "faith_all": 2, "spawn": "inspector", "doctrine": {"isolation": 5}}},
+        {"label": "Versuchen, ihn zu bekehren", "effects": {"random": [
+          {"p": 0.3, "text": "Hinrichsen trägt jetzt Robe. Seine Kühe auch.", "effects": {"recruit": 1, "food": 30, "awareness": 3}},
+          {"p": 0.7, "text": "Er hat die Mistgabel geholt.", "effects": {"heat": 5}}]}}
+      ]
+    },
+    "gesundheitsamt": {
+      "title": "Hygienekontrolle", "phase": [1, 3], "weight": 0.9, "cooldown": 18, "cond": {"heat_min": 15},
+      "text": "Das Gesundheitsamt kündigt eine Begehung der Gemeinschaftsküche an. Jemand hat sich über 'Eintopf unklarer Herkunft' beschwert.",
+      "choices": [
+        {"label": "Kontrolleur empfangen", "tip": "Ein Inspektor prüft Betten, Küche und Vorräte.", "effects": {"spawn": "inspector"}},
+        {"label": "Termin 'leider' verschieben", "effects": {"heat": 7}},
+        {"label": "Großputz & Schmiergeld im Keksteller", "cost": {"money": 150}, "effects": {"heat": -4, "evidence": 1}}
+      ]
+    },
+    "wunderheilung": {
+      "title": "Wunderheilung", "phase": [1, 3], "weight": 0.8, "cooldown": 20, "cond": {"members_min": 4},
+      "text": "{member} behauptet, die Handauflegung des Gurus habe den chronischen Schnupfen geheilt. Es war vermutlich das Ende der Pollensaison.",
+      "choices": [
+        {"label": "Heilungsseminare anbieten (150 € pro Kopf)", "effects": {"money": 400, "heat": 6, "evidence": 3, "awareness": 5, "doctrine": {"commerce": 10}}},
+        {"label": "Bescheiden bleiben: 'Das war die Gemeinschaft'", "effects": {"faith_all": 4, "mood_all": 3, "doctrine": {"apocalypse": -4}}},
+        {"label": "Ab sofort ersetzt Handauflegen den Arzt", "effects": {"faith_all": 6, "heat": 10, "evidence": 6, "doctrine": {"isolation": 8, "apocalypse": 5}}}
+      ]
+    },
+    "erbschaft": {
+      "title": "Die Erbschaft", "phase": [1, 3], "weight": 0.7, "cooldown": 30, "cond": {"members_min": 5},
+      "text": "Die Großtante von {member} ist verstorben und hinterlässt ein Reihenhaus in Castrop-Rauxel. {member} fragt, was nun damit geschehen soll.",
+      "choices": [
+        {"label": "'Die Gemeinschaft nimmt dir diese Last ab.'", "effects": {"money": 1500, "heat": 5, "evidence": 4, "member": {"mood": -10, "faith": -5}, "doctrine": {"commerce": 10}}},
+        {"label": "'Behalte es – aber denk an den Zehnt.'", "effects": {"money": 300, "member": {"bond": 8, "mood": 5}}},
+        {"label": "Als Außenstelle nutzen", "effects": {"awareness": 8, "ep": 6, "member": {"bond": 5}}}
+      ]
+    },
+    "stromausfall": {
+      "title": "Zeichen am Himmel", "phase": [1, 3], "weight": 0.7, "cooldown": 25,
+      "text": "Eine Sternschnuppe, ein Stromausfall und eine tote Amsel am selben Abend. Die Mitglieder schauen den Guru erwartungsvoll an.",
+      "choices": [
+        {"label": "'Die Sterne mahnen zur Eile!'", "effects": {"faith_all": 6, "mood_all": -4, "doctrine": {"apocalypse": 10}}},
+        {"label": "'Das Universum zwinkert uns zu.'", "effects": {"faith_all": 3, "mood_all": 4, "doctrine": {"apocalypse": -8}}},
+        {"label": "'Die Sicherung ist rausgeflogen.'", "effects": {"faith_all": -3, "mood_all": 2}}
+      ]
+    },
+    "streit": {
+      "title": "Zoff im Schlafsaal", "phase": [1, 3], "weight": 0.9, "cooldown": 10, "cond": {"members_min": 5},
+      "text": "{member} und ein weiteres Mitglied streiten lautstark darüber, wer näher am Guru sitzen darf. Erste Roben wurden zerrissen.",
+      "choices": [
+        {"label": "Sitzordnung nach Spendenhöhe", "effects": {"money": 150, "mood_all": -3, "doctrine": {"commerce": 8}}},
+        {"label": "Beide zu drei Tagen Schweigen verdonnern", "effects": {"mood_all": -2, "faith_all": 2, "doctrine": {"isolation": 3}}},
+        {"label": "Gruppenumarmung anordnen", "effects": {"mood_all": 4, "doctrine": {"apocalypse": -5}}}
+      ]
+    },
+    "doku": {
+      "title": "Die Streaming-Doku", "phase": [2, 3], "weight": 1.0, "cooldown": 40, "cond": {"followers_min": 800},
+      "text": "Ein Streamingdienst plant die sechsteilige True-Crime-Doku 'Im Bann des Lichts'. Das Kamerateam fragt höflich nach Drehgenehmigung.",
+      "choices": [
+        {"label": "Mitmachen und den Guru ins beste Licht rücken", "effects": {"random": [
+          {"p": 0.5, "text": "Der Guru wird zur Kultfigur. Die Anmeldezahlen explodieren.", "effects": {"awareness": 25, "followers_pct": 15, "heat": 6}},
+          {"p": 0.5, "text": "Der Schnitt war ... unvorteilhaft. Sehr unvorteilhaft.", "effects": {"awareness": 25, "heat": 18, "evidence": 10}}]}},
+        {"label": "Drehverbot und Anwälte", "cost": {"money": 2000}, "effects": {"heat": 8, "awareness": 8}},
+        {"label": "Eigene Doku produzieren: 'Im Licht des Banns'", "cost": {"money": 5000, "ep": 15}, "effects": {"awareness": 15, "followers_pct": 6, "doctrine": {"commerce": 6}}}
+      ]
+    },
+    "sektenbeauftragter": {
+      "title": "Der Sektenbeauftragte", "phase": [2, 3], "weight": 1.0, "cooldown": 30,
+      "text": "Der Sektenbeauftragte der Landeskirche warnt in einer Talkshow eindringlich vor {cult}. Er wirkt dabei ein wenig neidisch auf die Besucherzahlen.",
+      "choices": [
+        {"label": "Zum öffentlichen Streitgespräch herausfordern", "effects": {"random": [
+          {"p": 0.5, "text": "{guru} hat ihn rhetorisch an die Wand gespielt.", "effects": {"awareness": 15, "followers_pct": 5, "faith_all": 5}},
+          {"p": 0.5, "text": "Er hatte Akten dabei. Viele Akten.", "effects": {"heat": 14, "evidence": 6, "faith_all": -4}}]}},
+        {"label": "Ihn zum Tee einladen", "effects": {"heat": -3, "doctrine": {"isolation": -6}}},
+        {"label": "Zur 'unterdrückerischen Person' erklären", "effects": {"heat": 8, "faith_all": 4, "doctrine": {"isolation": 10, "apocalypse": 5}}}
+      ]
+    },
+    "untersuchungsausschuss": {
+      "title": "Parlamentarische Anfrage", "phase": [2, 3], "weight": 0.9, "cooldown": 40, "cond": {"heat_min": 35},
+      "text": "Eine Abgeordnete stellt eine Kleine Anfrage zu den 'Aktivitäten der sogenannten {cult}'. Die Regierung muss antworten.",
+      "choices": [
+        {"label": "Gutachten in Auftrag geben (von einem befreundeten Professor)", "cost": {"money": 8000}, "effects": {"heat": -10}},
+        {"label": "Mitglieder schreiben 10.000 empörte Briefe", "cost": {"ep": 10}, "effects": {"heat": -4, "awareness": 5, "mood_all": -3}},
+        {"label": "Aussitzen", "effects": {"heat": 10, "evidence": 4}}
+      ]
+    },
+    "uebersetzung": {
+      "title": "Übersetzungsfehler", "phase": [3, 3], "weight": 1.0, "cooldown": 35,
+      "text": "In der neuen Auslandsausgabe der Heiligen Schrift wurde 'Erleuchtung' durchgehend mit 'Glühbirnenwechsel' übersetzt. 40.000 Exemplare sind schon verteilt.",
+      "choices": [
+        {"label": "Zum Dogma erklären: Der rituelle Glühbirnenwechsel", "effects": {"faith_all": 2, "followers_pct": 3, "ep": 10, "doctrine": {"apocalypse": -5}}},
+        {"label": "Rückruf und Neudruck", "cost": {"money": 60000}, "effects": {"heat": -2}},
+        {"label": "Dem Übersetzer die Schuld geben und ihn exkommunizieren", "effects": {"heat": 4, "faith_all": 1}}
+      ]
+    },
+    "geheimdienst": {
+      "title": "Interessierte Dienste", "phase": [3, 3], "weight": 0.9, "cooldown": 40, "cond": {"followers_min": 200000},
+      "text": "Vor dem Gelände parkt seit Tagen ein Lieferwagen mit der Aufschrift 'Blumen-Service – Definitiv kein Geheimdienst'.",
+      "choices": [
+        {"label": "Den Agenten Kaffee bringen und winken", "effects": {"heat": -3, "mood_all": 2}},
+        {"label": "Abhörsichere Jurte bauen", "cost": {"money": 20000}, "effects": {"evidence": -8, "doctrine": {"isolation": 10}}},
+        {"label": "Eigene Gegenspionage aufbauen", "cost": {"ep": 25}, "effects": {"heat": 8, "evidence": -5, "doctrine": {"apocalypse": 12, "isolation": 8}}}
+      ]
+    },
+    "manoever": {
+      "title": "Manöver in der Nachbarschaft", "phase": [3, 3], "weight": 0.8, "cooldown": 45, "cond": {"doctrine": {"apocalypse": [35, 100]}},
+      "text": "Das Militär hält 'rein zufällig' eine Großübung direkt neben dem Gelände ab. Ein Panzer hat die Hecke gestreift.",
+      "choices": [
+        {"label": "Den Soldaten Linseneintopf servieren", "effects": {"heat": -8, "meals": -6, "doctrine": {"apocalypse": -10}}},
+        {"label": "Öffentlich als Verfolgung anprangern", "effects": {"heat": 6, "faith_all": 8, "awareness": 10}},
+        {"label": "Die eigene 'Ordner-Truppe' aufmarschieren lassen", "effects": {"heat": 20, "evidence": 8, "faith_all": 5, "doctrine": {"apocalypse": 15}}}
+      ]
+    },
+    "konkurrenz": {
+      "title": "Die Konkurrenz", "phase": [1, 3], "weight": 0.8, "cooldown": 25, "cond": {"day_min": 12},
+      "text": "In der Nachbarschaft eröffnet das 'Zentrum für Quanten-Achtsamkeit'. Sie haben einen Gratis-Smoothie-Tag. Zwei Mitglieder wirken nachdenklich.",
+      "choices": [
+        {"label": "Gegenangebot: Gratis-Eintopf-Woche", "effects": {"food": -20, "mood_all": 4, "awareness": 4}},
+        {"label": "Die Konkurrenz als 'dunkle Macht' entlarven", "effects": {"faith_all": 3, "doctrine": {"apocalypse": 8, "isolation": 5}}},
+        {"label": "Fusion vorschlagen", "effects": {"random": [
+          {"p": 0.4, "text": "Feindliche Übernahme geglückt. Der Smoothie-Mixer gehört jetzt uns.", "effects": {"recruit": 2, "money": 200}},
+          {"p": 0.6, "text": "Sie haben zwei von uns abgeworben. Mit Smoothies!", "effects": {"faith_all": -5}}]}}
+      ]
+    },
+    "spendengala": {
+      "title": "Großspender", "phase": [1, 3], "weight": 0.7, "cooldown": 25, "cond": {"doctrine": {"commerce": [15, 100]}},
+      "text": "Ein Zahnarzt aus dem Villenviertel möchte 'etwas für sein Karma tun' und fragt nach den Konditionen.",
+      "choices": [
+        {"label": "Karma-Paket Platin (inkl. Namensplakette)", "effects": {"money": 900, "doctrine": {"commerce": 8}}},
+        {"label": "Zur Mitarbeit auf dem Feld einladen", "effects": {"random": [
+          {"p": 0.4, "text": "Er fand das Unkrautjäten 'unglaublich erdend' und bleibt.", "effects": {"recruit": 1, "money": 300}},
+          {"p": 0.6, "text": "Er hat Rücken. Und ist wieder weg.", "effects": {}}]}}
+      ]
+    },
+    "hungerstreik": {
+      "title": "Dicke Luft", "phase": [1, 3], "weight": 1.2, "cooldown": 8, "cond": {"mood_max": 35, "members_min": 4},
+      "text": "Die Stimmung ist im Keller. {member} hat ein anonymes Flugblatt an die Küchentür genagelt: 'MEHR SCHLAF, WENIGER LINSEN'. Die Handschrift ist eindeutig.",
+      "choices": [
+        {"label": "Ein Festmahl ausrichten", "cost": {"money": 150}, "effects": {"mood_all": 12, "meals": 6}},
+        {"label": "Sonderpredigt über Undankbarkeit", "effects": {"faith_all": 3, "mood_all": -4, "member": {"faith": -10}}},
+        {"label": "{member} öffentlich zur Selbstkritik bitten", "effects": {"member": {"mood": -15, "faith": 5}, "faith_all": 2, "evidence": 2, "doctrine": {"isolation": 5, "apocalypse": 4}}}
+      ]
+    },
+    "tv_talkshow": {
+      "title": "Einladung in die Talkshow", "phase": [2, 3], "weight": 0.8, "cooldown": 30,
+      "text": "'Menschen bei Mischberger' lädt {guru} ein. Thema: 'Gurus, Globuli, Größenwahn – wem können wir noch glauben?'",
+      "choices": [
+        {"label": "Hingehen und charmant sein", "effects": {"random": [
+          {"p": 0.6, "text": "Das Publikum liebt ihn. Die Moderatorin trägt jetzt eine Kette mit unserem Symbol.", "effects": {"awareness": 20, "followers_pct": 8}},
+          {"p": 0.4, "text": "Die Frage nach der Yacht kam unerwartet.", "effects": {"heat": 12, "awareness": 15}}]}},
+        {"label": "Absagen: 'Der Guru spricht nur zu Erwachten.'", "effects": {"faith_all": 2, "doctrine": {"isolation": 6}}}
+      ]
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "axes": {
+    "commerce": {"name": "Geschäftssinn", "neg": "Asketisch", "pos": "Kommerziell", "desc": "Geht es um die Seele oder um das Abo-Modell?"},
+    "isolation": {"name": "Abschottung", "neg": "Weltoffen", "pos": "Abgeschottet", "desc": "Hippes Seminarzentrum oder Stacheldraht-Idyll?"},
+    "apocalypse": {"name": "Endzeitstimmung", "neg": "Harmonie", "pos": "Endzeit", "desc": "Klangschalen-Wellness oder Countdown zum Weltuntergang?"}
+  },
+  "archetypes": [
+    {"id": "bunker", "name": "Endzeit-Bunkergemeinde", "cond": {"isolation": [40, 100], "apocalypse": [40, 100]}, "text": "Konserven, Gasmasken, gute Laune.", "mods": {"faith_gain": 1.2, "heat_gain": 1.3, "flee": 0.8}},
+    {"id": "vertrieb", "name": "Erlösungs-Strukturvertrieb", "cond": {"commerce": [40, 100], "apocalypse": [0, 100]}, "text": "Wer drei Freunde wirbt, wird schneller erlöst.", "mods": {"income": 1.25, "growth": 1.1, "faith_gain": 0.9}},
+    {"id": "wellness", "name": "Wellness-Franchise", "cond": {"commerce": [40, 100], "apocalypse": [-100, 0]}, "text": "Erleuchtung, jetzt auch als Wochenend-Retreat mit Frühbucherrabatt.", "mods": {"income": 1.2, "heat_gain": 0.8, "visitor_rate": 1.3}},
+    {"id": "asketen", "name": "Asketen-Orden", "cond": {"commerce": [-100, -40]}, "text": "Besitzlos glücklich. Der Guru verwaltet den Rest.", "mods": {"food_use": 0.85, "faith_gain": 1.15, "income": 0.8}},
+    {"id": "kommune", "name": "Abgeschottete Landkommune", "cond": {"isolation": [40, 100]}, "text": "Von außen sieht man nur den Zaun. Das ist Absicht.", "mods": {"faith_decay": 0.8, "visitor_rate": 0.7, "heat_gain": 1.15}},
+    {"id": "lifestyle", "name": "Lifestyle-Bewegung", "cond": {"isolation": [-100, -40]}, "text": "Hat einen Podcast, einen Onlineshop und eine eigene Smoothie-Linie.", "mods": {"growth": 1.25, "faith_gain": 0.85, "visitor_rate": 1.4}},
+    {"id": "untergang", "name": "Weltuntergangs-Sekte", "cond": {"apocalypse": [40, 100]}, "text": "Der Termin wird notfalls verschoben.", "mods": {"faith_gain": 1.2, "tithe": 1.3, "heat_gain": 1.2}},
+    {"id": "harmonie", "name": "Harmonie-Kreis", "cond": {"apocalypse": [-100, -40]}, "text": "Alle haben sich lieb. Verdächtig lieb.", "mods": {"heat_gain": 0.75, "convert": 1.15, "tithe": 0.85}},
+    {"id": "gemischt", "name": "Unentschlossene Erweckungsgemeinschaft", "cond": {}, "text": "Ein bisschen von allem. Die Lehre wird noch ausformuliert.", "mods": {}}
+  ],
+  "myths": [
+    {"id": "sterne", "name": "Die Sternengeschwister kommen", "text": "Außerirdische Lichtwesen holen die Würdigen ab. Abflugort: unser Grundstück.", "doctrine": {"apocalypse": 25, "isolation": 15}},
+    {"id": "erfolg", "name": "Erfolg durch Hingabe™", "text": "Reichtum ist ein Zeichen innerer Reife. Besonders der Reichtum des Gurus.", "doctrine": {"commerce": 30, "isolation": -10}},
+    {"id": "natur", "name": "Zurück zur Ur-Rübe", "text": "Die Zivilisation ist vergiftet. Die Rettung wächst im eigenen Beet.", "doctrine": {"commerce": -25, "apocalypse": -15, "isolation": 10}}
+  ],
+  "ranks": [
+    {"name": "Novize", "cost": 0, "robe": [214, 205, 180]},
+    {"name": "Eingeweihter", "cost": 6, "robe": [176, 150, 214]},
+    {"name": "Auserwählter", "cost": 15, "robe": [130, 85, 190]},
+    {"name": "Innerer Kreis", "cost": 35, "robe": [72, 40, 120]}
+  ],
+  "projects": {
+    "tv_sender": {"name": "Eigener Fernsehsender", "text": "'Erleuchtung TV': 24 Stunden Predigt, Teleshopping und eine Kochshow mit Linsen.", "money": 40000000, "ep": 120, "days": 12, "mods": {"growth": 1.3, "visitor_rate": 1.5}},
+    "partei": {"name": "Politische Partei gründen", "text": "'Die Erleuchteten' – 4,9 % reichen völlig, wenn man die richtigen Ausschüsse besetzt.", "money": 60000000, "ep": 150, "days": 15, "mods": {"heat_gain": 0.7}},
+    "insel": {"name": "Steuerparadies-Insel kaufen", "text": "Die Mikronation 'Erleuchtistan': eigene Flagge, eigene Briefmarken, keine Finanzämter.", "money": 150000000, "ep": 200, "days": 20, "mods": {"income": 1.4, "heat_gain": 0.9}},
+    "satellit": {"name": "Orbitaler Schwingungsempfänger", "text": "Ein vergoldeter Satellit bündelt kosmische Energie. Und Pay-TV-Signale.", "money": 400000000, "ep": 300, "days": 25, "mods": {"growth": 1.25, "faith_gain": 1.3}},
+    "weltreligion": {"name": "Anerkennung als Weltreligion", "text": "Sitz bei den Vereinten Nationen, eigener Feiertag, Steuerfreiheit überall. Benötigt 5 % der Weltbevölkerung als Anhänger.", "money": 1000000000, "ep": 500, "days": 30, "need_share": 0.05, "win": true, "mods": {}}
+  }
+}

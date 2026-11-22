@@ -1,0 +1,153 @@
+{
+  "id": "local", "name": "Bad Sülzheim",
+  "geo": false,
+  "bounds": [0, 0, 100, 70],
+  "home": "waldrand",
+  "pop_unit": "Tsd.",
+  "languages": {"de": "Deutsch"},
+  "regions": [
+    {
+      "id": "altstadt", "name": "Altstadt",
+      "polys": [
+        [[40.0,34.3], [42.5,33.8], [45.0,33.6], [47.5,33.4], [50.0,32.8], [52.5,32.8], [55.0,33.1], [57.5,33.4], [60.0,33.8], [61.4,36.8], [62.0,40.0], [60.3,42.4], [59.0,45.0], [56.7,44.9], [54.4,45.4], [52.3,46.2], [50.0,46.5], [45.9,45.4], [42.0,44.0], [40.1,41.7], [39.0,39.0], [39.7,36.7]]
+      ],
+      "pop": 4.2, "lang": "de",
+      "wealth": 0.55, "openness": 0.45, "state": 0.7, "press": 0.8, "military": 0,
+      "affinity": {"commerce": 0.1, "isolation": -0.3, "apocalypse": -0.2},
+      "quirk": {
+        "name": "Ordnungsamt",
+        "text": "Das Ordnungsamt sitzt gleich neben dem Marktbrunnen – und hat ab 16 Uhr nichts mehr vor.",
+        "mods": {"heat": 1.3, "growth": 1.1}
+      }
+    },
+    {
+      "id": "bahnhof", "name": "Bahnhofsviertel",
+      "polys": [
+        [[42.0,44.0], [45.9,45.4], [50.0,46.5], [52.3,46.2], [54.4,45.4], [56.7,44.9], [59.0,45.0], [61.9,47.1], [64.0,50.0], [62.9,53.0], [62.0,56.0], [59.6,57.0], [57.2,58.1], [54.6,57.7], [52.0,58.0], [49.5,58.1], [46.9,58.2], [44.5,57.3], [42.0,57.0], [38.9,54.5], [37.0,51.0], [39.2,47.3]]
+      ],
+      "pop": 5.1, "lang": "de",
+      "wealth": 0.25, "openness": 0.75, "state": 0.5, "press": 0.4, "military": 0,
+      "affinity": {"commerce": -0.1, "isolation": -0.4, "apocalypse": 0.3},
+      "quirk": {
+        "name": "Verspätung",
+        "text": "Wer auf den Regionalexpress wartet, hat nachweislich Zeit für ein Gespräch über den Sinn des Lebens.",
+        "mods": {"growth": 1.4, "income": 0.7}
+      }
+    },
+    {
+      "id": "kur", "name": "Kurviertel",
+      "polys": [
+        [[20.0,31.7], [20.7,28.8], [20.7,25.8], [21.7,23.0], [22.0,20.0], [23.8,18.3], [26.0,17.0], [28.5,16.7], [31.0,16.5], [34.4,17.9], [38.0,18.0], [41.0,19.5], [44.0,21.0], [43.8,23.5], [44.1,26.0], [45.0,28.4], [45.0,31.0], [42.5,31.4], [40.0,31.7], [37.5,31.3], [35.0,30.9], [32.5,30.6], [30.0,30.2], [27.5,30.5], [25.0,31.0], [22.5,31.3]]
+      ],
+      "pop": 2.8, "lang": "de",
+      "wealth": 0.75, "openness": 0.7, "state": 0.4, "press": 0.5, "military": 0,
+      "affinity": {"commerce": 0.6, "isolation": -0.2, "apocalypse": -0.8},
+      "quirk": {
+        "name": "Kurgäste",
+        "text": "Wer drei Wochen lang Sole inhaliert, glaubt auch an Heilsteine – und die Kasse zahlt die Anreise.",
+        "mods": {"income": 1.3, "growth": 1.15}
+      }
+    },
+    {
+      "id": "villen", "name": "Villenviertel Sonnenhang",
+      "polys": [
+        [[45.0,31.0], [45.0,28.4], [44.1,26.0], [43.8,23.5], [44.0,21.0], [41.0,19.5], [38.0,18.0], [39.2,14.6], [40.0,11.0], [43.7,8.4], [48.0,7.0], [50.5,7.0], [53.0,7.7], [55.5,7.9], [58.0,8.0], [62.1,8.7], [66.0,10.0], [68.0,14.0], [64.5,15.5], [61.0,17.0], [61.5,20.6], [63.0,24.0], [62.0,27.8], [62.0,31.7], [60.0,31.2], [57.5,31.0], [55.0,30.8], [52.5,30.5], [50.0,30.2], [47.5,30.5]]
+      ],
+      "pop": 1.6, "lang": "de",
+      "wealth": 1.0, "openness": 0.3, "state": 0.6, "press": 0.6, "military": 0,
+      "affinity": {"commerce": 0.8, "isolation": 0.3, "apocalypse": -0.3},
+      "quirk": {
+        "name": "Anwaltsdichte",
+        "text": "Hier hat jeder Gartenzaun einen eigenen Anwalt – wer die Witwe gewinnt, gewinnt die Kanzlei gleich mit.",
+        "mods": {"income": 1.5, "growth": 0.7, "legal": 1.2}
+      }
+    },
+    {
+      "id": "neubau", "name": "Neubaugebiet Sülzbogen",
+      "polys": [
+        [[20.0,34.3], [22.5,33.9], [25.0,33.7], [27.5,33.3], [30.0,32.8], [32.5,33.3], [35.0,33.7], [37.5,33.9], [40.0,34.3], [39.7,36.7], [39.0,39.0], [40.1,41.7], [42.0,44.0], [39.2,47.3], [37.0,51.0], [38.9,54.5], [42.0,57.0], [40.1,58.5], [38.5,60.4], [36.4,61.5], [34.0,62.0], [31.0,61.0], [28.2,59.8], [25.1,60.4], [22.0,60.0], [21.0,57.5], [19.3,55.3], [17.1,53.8], [15.0,52.0], [15.6,49.5], [15.4,47.0], [15.6,44.5], [16.0,42.0], [18.5,38.4]]
+      ],
+      "pop": 6.3, "lang": "de",
+      "wealth": 0.6, "openness": 0.5, "state": 0.4, "press": 0.3, "military": 0,
+      "affinity": {"commerce": 0.4, "isolation": -0.1, "apocalypse": 0.1},
+      "quirk": {
+        "name": "Bausparvertrag",
+        "text": "Doppelhaushälfte, Carport, Sinnkrise: Der Kredit läuft noch 28 Jahre, die Erleuchtung muss also günstig sein.",
+        "mods": {"growth": 1.2, "income": 0.8}
+      }
+    },
+    {
+      "id": "campus", "name": "Uni-Campus",
+      "polys": [
+        [[62.0,31.7], [62.0,27.8], [63.0,24.0], [61.5,20.6], [61.0,17.0], [64.5,15.5], [68.0,14.0], [70.3,14.0], [72.6,14.7], [74.7,15.7], [77.0,16.0], [79.8,18.8], [82.0,22.0], [83.1,26.0], [84.0,30.0], [82.2,33.4], [80.0,36.7], [77.5,35.9], [75.1,34.9], [72.5,34.3], [70.0,33.7], [66.0,32.8]]
+      ],
+      "pop": 3.5, "lang": "de",
+      "wealth": 0.2, "openness": 0.9, "state": 0.3, "press": 0.65, "military": 0,
+      "affinity": {"commerce": -0.6, "isolation": -0.5, "apocalypse": 0.2},
+      "quirk": {
+        "name": "Erstsemester",
+        "text": "Jedes Wintersemester neue Suchende – leider gründet der AStA nach zwei Wochen einen Arbeitskreis gegen dich.",
+        "mods": {"growth": 1.5, "income": 0.6, "heat": 1.15}
+      }
+    },
+    {
+      "id": "industrie", "name": "Industriegebiet Ost",
+      "polys": [
+        [[60.0,33.8], [62.5,34.4], [65.0,35.2], [67.4,35.9], [70.0,36.3], [72.5,37.2], [74.9,38.1], [77.5,38.6], [80.0,39.3], [83.0,40.1], [86.1,40.6], [89.1,41.3], [92.0,42.3], [93.8,46.1], [95.0,50.0], [94.1,52.6], [92.3,54.7], [90.3,56.5], [88.0,58.0], [85.0,58.4], [81.9,58.3], [79.1,59.5], [76.0,60.0], [73.2,57.1], [71.1,53.7], [67.7,51.6], [64.0,50.0], [61.9,47.1], [59.0,45.0], [60.3,42.4], [62.0,40.0], [61.4,36.8]]
+      ],
+      "pop": 0.9, "lang": "de",
+      "wealth": 0.45, "openness": 0.35, "state": 0.35, "press": 0.2, "military": 0,
+      "affinity": {"commerce": 0.2, "isolation": 0.2, "apocalypse": 0.3},
+      "quirk": {
+        "name": "Schichtbetrieb",
+        "text": "Günstige Hallen, niemand stellt Fragen – nur Bekehrungen bitte zwischen Früh- und Spätschicht.",
+        "mods": {"cost": 0.7, "growth": 0.85}
+      }
+    },
+    {
+      "id": "garten", "name": "Schrebergärten Morgenröte e.V.",
+      "polys": [
+        [[64.0,50.0], [67.7,51.6], [71.1,53.7], [73.2,57.1], [76.0,60.0], [73.7,62.8], [72.0,66.0], [69.1,67.0], [66.1,67.7], [63.0,67.7], [60.0,67.0], [58.8,64.1], [56.7,61.9], [54.2,60.1], [52.0,58.0], [54.6,57.7], [57.2,58.1], [59.6,57.0], [62.0,56.0], [62.9,53.0]]
+      ],
+      "pop": 0.3, "lang": "de",
+      "wealth": 0.35, "openness": 0.4, "state": 0.6, "press": 0.5, "military": 0,
+      "affinity": {"commerce": -0.4, "isolation": 0.5, "apocalypse": 0},
+      "quirk": {
+        "name": "Vereinssatzung",
+        "text": "Heckenhöhe 1,25 Meter, Mittagsruhe ab 13 Uhr: Gegen diesen Vorstand ist jede Sekte ein Debattierclub.",
+        "mods": {"heat": 1.3, "cost": 0.8}
+      }
+    },
+    {
+      "id": "dorf", "name": "Krummelbach",
+      "polys": [
+        [[5.0,19.0], [7.6,16.8], [10.0,14.5], [13.5,14.6], [17.0,14.0], [19.0,17.4], [22.0,20.0], [21.7,23.0], [20.7,25.8], [20.7,28.8], [20.0,31.7], [17.0,31.3], [13.9,31.0], [10.9,30.5], [8.0,29.7], [5.6,27.7], [4.0,25.0], [4.7,22.0]]
+      ],
+      "pop": 1.1, "lang": "de",
+      "wealth": 0.5, "openness": 0.2, "state": 0.3, "press": 0.3, "military": 0,
+      "affinity": {"commerce": -0.2, "isolation": 0.4, "apocalypse": -0.1},
+      "quirk": {
+        "name": "Dorffunk",
+        "text": "Was du morgens am Bäckerwagen sagst, weiß mittags die Freiwillige Feuerwehr.",
+        "mods": {"growth": 0.7, "heat": 1.25}
+      }
+    },
+    {
+      "id": "waldrand", "name": "Aussiedlerhof am Waldrand",
+      "polys": [
+        [[68.0,14.0], [66.0,10.0], [67.5,7.1], [70.0,5.0], [72.5,4.2], [74.8,3.1], [77.4,3.3], [80.0,3.0], [82.8,2.5], [85.6,3.2], [88.4,3.9], [91.0,5.0], [92.6,6.7], [93.6,8.8], [95.0,10.7], [97.0,12.0], [95.7,15.9], [95.0,20.0], [91.7,19.9], [88.5,20.9], [85.3,21.9], [82.0,22.0], [79.8,18.8], [77.0,16.0], [74.7,15.7], [72.6,14.7], [70.3,14.0]]
+      ],
+      "pop": 0.1, "lang": "de",
+      "wealth": 0.15, "openness": 0.6, "state": 0.2, "press": 0.1, "military": 0,
+      "affinity": {"commerce": -0.3, "isolation": 1.0, "apocalypse": 0.4},
+      "quirk": {
+        "name": "Funkloch",
+        "text": "Kein Netz, kein Nachbar, kein Bebauungsplan: Hier sagen sich Fuchs und Guru gute Nacht.",
+        "mods": {"heat": 0.6, "cost": 0.8}
+      }
+    }
+  ],
+  "links": [
+    ["altstadt", "kur"], ["altstadt", "villen"], ["neubau", "dorf"], ["industrie", "campus"]
+  ]
+}

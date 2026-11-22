@@ -1,0 +1,37 @@
+{
+  "wall_wood": {"name": "Holzwand", "cat": "Struktur", "kind": "wall", "cost": 8, "work": 60, "drag": "line", "desc": "Hält Wind, Wetter und neugierige Blicke ab."},
+  "wall_stone": {"name": "Steinmauer", "cat": "Struktur", "kind": "wall", "cost": 20, "work": 110, "drag": "line", "pracht": 0.3, "desc": "Für die Ewigkeit gebaut. Oder bis zur Durchsuchung."},
+  "door_wood": {"name": "Tür", "cat": "Struktur", "kind": "door", "cost": 15, "work": 50, "drag": "single", "desc": "Ohne Tür ist ein Raum nur ein sehr konsequentes Versteck."},
+  "fence": {"name": "Zaun", "cat": "Struktur", "kind": "fence", "cost": 3, "work": 20, "drag": "line", "doctrine": {"isolation": 0.12}, "desc": "Hält Außenstehende draußen. Und Mitglieder drinnen. Rein symbolisch natürlich."},
+  "gate": {"name": "Tor", "cat": "Struktur", "kind": "gate", "cost": 12, "work": 40, "drag": "single", "desc": "Mitglieder dürfen durch. Fremde nur am Tag der offenen Tür."},
+
+  "floor_wood": {"name": "Dielenboden", "cat": "Boden", "kind": "floor", "cost": 2, "drag": "rect", "pracht": 0.15, "desc": "Knarzt andächtig."},
+  "floor_stone": {"name": "Steinboden", "cat": "Boden", "kind": "floor", "cost": 4, "drag": "rect", "pracht": 0.25, "desc": "Kalt, hart, charakterbildend."},
+  "floor_tile": {"name": "Fliesen", "cat": "Boden", "kind": "floor", "cost": 5, "drag": "rect", "pracht": 0.3, "desc": "Pflegeleicht. Wichtig bei Inspektionen."},
+  "floor_carpet": {"name": "Zeremonienteppich", "cat": "Boden", "kind": "floor", "cost": 12, "drag": "rect", "pracht": 0.8, "desc": "Purpur mit Goldrand. Nur barfuß und nur bei voller Hingabe."},
+
+  "bed": {"name": "Pritsche", "cat": "Möbel", "kind": "object", "use": "bed", "blocks": false, "cost": 25, "work": 50, "drag": "single", "desc": "Schlafplatz für ein Mitglied. Bequemlichkeit lenkt nur ab."},
+  "bed_guru": {"name": "Himmelbett des Gurus", "cat": "Möbel", "kind": "object", "use": "bed_guru", "blocks": false, "cost": 400, "work": 150, "drag": "single", "pracht": 6, "doctrine": {"commerce": 4}, "desc": "Der Guru trägt die Last der Welt. Dafür braucht er eine sehr gute Matratze."},
+  "table": {"name": "Esstisch", "cat": "Möbel", "kind": "object", "use": "table", "blocks": true, "cost": 35, "work": 50, "drag": "single", "desc": "Gemeinsames Essen stärkt die Gemeinschaft. Und die Kontrolle."},
+  "campfire": {"name": "Feuerstelle", "cat": "Möbel", "kind": "object", "use": "stove", "blocks": true, "cost": 10, "work": 30, "drag": "single", "speed": 0.5, "desc": "Primitive Kochstelle. Langsam, aber romantisch."},
+  "stove": {"name": "Gemeinschaftsherd", "cat": "Möbel", "kind": "object", "use": "stove", "blocks": true, "cost": 90, "work": 90, "drag": "single", "desc": "Kocht Rohkost zu Mahlzeiten. Eintopf, immer Eintopf."},
+  "crate": {"name": "Vorratskiste", "cat": "Möbel", "kind": "object", "use": "crate", "blocks": true, "cost": 25, "work": 30, "drag": "single", "desc": "+40 Lagerkapazität für Nahrung."},
+  "desk": {"name": "Spendenbüro", "cat": "Möbel", "kind": "object", "use": "desk", "blocks": true, "cost": 120, "work": 80, "drag": "single", "doctrine": {"commerce": 3}, "desc": "Schreiber verfassen hier herzzerreißende Spendenbriefe."},
+  "printer": {"name": "Druckerpresse", "cat": "Möbel", "kind": "object", "use": "printer", "blocks": true, "cost": 280, "work": 120, "drag": "single", "desc": "Druckt Traktate für Werbekampagnen. 'Die Wahrheit in 12 einfachen Raten'."},
+  "mat": {"name": "Meditationsmatte", "cat": "Möbel", "kind": "object", "use": "mat", "blocks": false, "cost": 12, "work": 15, "drag": "single", "doctrine": {"commerce": -1, "apocalypse": -2}, "desc": "Mitglieder meditieren in ihrer Freizeit und stärken so ihren Glauben."},
+
+  "altar": {"name": "Altar", "cat": "Kult", "kind": "object", "use": "altar", "blocks": true, "cost": 120, "work": 120, "drag": "single", "pracht": 4, "desc": "Zentrum der Predigten. Ohne Altar keine Andacht."},
+  "statue": {"name": "Guru-Statue (vergoldet)", "cat": "Kult", "kind": "object", "use": "statue", "blocks": true, "cost": 800, "work": 250, "drag": "single", "pracht": 10, "doctrine": {"commerce": 3, "isolation": 2}, "desc": "Bescheidenheit ist eine Tugend. Für die anderen."},
+  "banner": {"name": "Banner", "cat": "Kult", "kind": "object", "use": "banner", "blocks": true, "cost": 30, "work": 25, "drag": "single", "pracht": 1.5, "desc": "Zeigt Flagge. Hebt die Pracht eines Raumes."},
+  "lamp": {"name": "Feuerschale", "cat": "Kult", "kind": "object", "use": "lamp", "blocks": true, "cost": 18, "work": 20, "drag": "single", "pracht": 1, "desc": "Stimmungsvolles Licht für stimmungsvolle Enthüllungen."},
+  "donation_box": {"name": "Opferstock", "cat": "Kult", "kind": "object", "use": "donation", "blocks": true, "cost": 50, "work": 30, "drag": "single", "doctrine": {"commerce": 3}, "desc": "Besucher werfen beim Gehen etwas ein. Freiwillig, unter Beobachtung."},
+  "merch": {"name": "Merch-Stand", "cat": "Kult", "kind": "object", "use": "merch", "blocks": true, "cost": 180, "work": 80, "drag": "single", "doctrine": {"commerce": 7}, "desc": "Heilkristalle, signierte Guru-Poster, Erleuchtungs-Tee. Besucher kaufen ein."},
+  "confession": {"name": "Beichtkabine", "cat": "Kult", "kind": "object", "use": "confession", "blocks": true, "cost": 220, "work": 120, "drag": "single", "doctrine": {"isolation": 4}, "desc": "Hier wird alles notiert. Wirklich alles. Hilft, Maulwürfe und Abweichler zu finden."},
+  "loudspeaker": {"name": "Erbauungs-Lautsprecher", "cat": "Kult", "kind": "object", "use": "speaker", "blocks": true, "cost": 160, "work": 60, "drag": "single", "doctrine": {"isolation": 3, "apocalypse": 3}, "desc": "Beschallt die Umgebung rund um die Uhr mit Weisheiten. Glaube steigt, Laune sinkt."},
+  "watchtower": {"name": "Wachturm", "cat": "Kult", "kind": "object", "use": "tower", "blocks": true, "cost": 320, "work": 200, "drag": "single", "doctrine": {"isolation": 8, "apocalypse": 5}, "desc": "Wächter sehen weiter. 'Nur zum Sternegucken', sagt der Bauantrag."},
+  "goat": {"name": "Heilige Ziege", "cat": "Kult", "kind": "animal", "cost": 110, "drag": "single", "desc": "Gibt täglich Milch und Segen. Läuft ohne Gehege (Zaun!) einfach davon."},
+
+  "tree": {"name": "Baum", "cat": "Natur", "kind": "nature", "blocks": true, "hidden": true, "cost": 0},
+  "bush": {"name": "Busch", "cat": "Natur", "kind": "nature", "blocks": true, "hidden": true, "cost": 0},
+  "boulder": {"name": "Findling", "cat": "Natur", "kind": "nature", "blocks": true, "hidden": true, "cost": 0}
+}
